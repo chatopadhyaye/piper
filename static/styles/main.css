@@ -583,7 +583,7 @@ a#black_font {
   transform: rotateY(-180deg);
   backface-visibility: hidden;
   background-color: white;
-  z-index: 99999999;
+  z-index: 99;
   float: left;
   top: 0px;
   min-height: 693px;
