@@ -12,11 +12,168 @@
 </head>
 <body>
 
-{% include "inc/nav.html" %}
-{% include "inc/sidebar.html" %}
+
+
+                  <!--Navigation bar-->
+
+
+
+
+<!--Home Button-->
+<div class="vp-nav">
+   <div class="col-1 home_icon">
+      <img src="{% static "images/homeicon.png" %}">
+   </div>
+
+<!--Search bar-->
+
+   <div class="col-4 search-container" >
+         <form class="vp-search"  role="search">
+          <input type="text" class="vp-input-search" placeholder="search" >
+         <span class="fa fa-search vp-search-icon pull-right" ></span>
+      </form>  
+      </div>
+
+<!--VityPro Logo-->
+
+      <div class="col-2 branding logo" >          
+           <h1><img src="{% static "images/logoa.png" %}" style="height:30px" /></h1>
+      </div>
+     
+<!--Blue/green page toggle-->     
+
+      <div class="col-3 spacer vp_margin_top ">       
+           <div id="switch" class="hover pull-right" onclick="this.classList.toggle('hover')">
+              <div id="toggle">
+              </div>
+            </div>
+     </div>
+
+<!--Settings and logout button-->
+
+     <div class="col-2 navdrop">
+     <button type="button" class="vp-cog " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="fa fa-cog vp-cog"></span>
+                          </button>            
+            <h6 class="vp-logout pull-right">Logout</h6>
+     </div>
+
+</div>
+
+
+
+
+
+                <!--Sidebar-->
+
+
+
+
+
+<div class="foo">
+
+        <!--Sidebar rotator-->
+  <div id="rotator">
+    <img src="{% static "images/rotate.png" %}">
+  </div>
+   
+<div class="vp_sidebar front">
+
+<div class="notice_panel">
+
+       <!--User pic and name-->
+
+    <div class="mtop">
+      <div class="col-12" style = "padding: 4px 0px 3px 0px;">
+        <div class="col-3 user_pic">
+          <img src="{% static "images/ck.jpg" %}" class="vp-user-dp">
+        </div>
+        <div class="col-7 user_name">
+          <h3>Clark Kent</h3>
+        </div>
+        
+      </div>
+      
+    </div>    
+   
+       <!--Notification panel-->
+
+
+             <!--Message-->
+    <div class="col-12 padding_side">
+      <button type="button" class="rgb_btn pull_right notif_r"><span></span></button>
+    </div>   
+        <!--Connection-->  
+    <div class="col-12 padding_side">
+      <button type="button" class="rgb_btn pull_right notif_g"><span></span></button>
+    </div>
+        <!--Notification-->
+    <div class="col-12 padding_side">
+      <button type="button" class="rgb_btn pull_right notif_b"><span></span></button>
+    </div>
+
+
+<!--Chat bar-->  
+
+
+<!--Chathead-->
+    <div class="col-12 chat_head_cont">
+        <div class="col-12 chat_head">
+         <h5 id="line_onf">ONLINE</h5>
+         <span class="fa fa-toggle-on chat_on"></span>
+      </div>
+     </div>    
+
+  <div class="cont_search">
+   <span class="fa fa-search"></span>
+   <input type="text" name="cont_search" placeholder="search contacts">
+  </div>
+
+
+</div>       
+
+<div class="chat_bar">
+<ul id="no_m">
+       <!--chat list person 1-->
+       <li class=" col-12 vp_chat_row">
+         <a href="{% url "date" %}" id="black_font">
+         <div class="row_container">
+            <div class="chat_dp_cont">
+               <img src="{% static "images/pratik.jpg" %}" class="chat_dp">
+               <div class="chat_name">Pratik Sharma</div>
+               <div class="on_indic_class">
+               <span class="fa fa-circle online_indic"></span>
+               </div>
+            </div>
+         </div>
+         </a>
+       </li>
+
+
+</ul>
+
+
+
+
+
+</div>
+</div>  <!--front-->
+
+<div class="back">
+  
+</div>  <!--back-->
+
+</div> <!--foo-->
+
+
+
 
 
          <!--Main content-->
+
+
+
+
 
 <div class="m_side">
 <div class="mid_sec">
