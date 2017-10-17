@@ -1,0 +1,44 @@
+{% load static %}
+                  <!--Navigation bar-->
+
+
+<!--Home Button-->
+<div class="vp-nav">
+	<div class="col-1 home_icon">
+		<img src="{% static "images/homeicon.png" %}">
+	</div>
+
+<!--Search bar-->
+
+	<div class="col-4 search-container" >
+      	<form class="vp-search"  role="search">
+       	 <input type="text" class="vp-input-search" placeholder="search" >
+         <span class="fa fa-search vp-search-icon pull-right" ></span>
+     	</form>  
+      </div>
+
+<!--VityPro Logo-->
+
+      <div class="col-2 branding logo" >          
+           <h1><img src="{% static "images/logoa.png" %}" style="height:30px" /></h1>
+      </div>
+     
+<!--Blue/green page toggle-->     
+
+      <div class="col-3 spacer vp_margin_top ">     	
+           <div id="switch" class="hover pull-right" onclick="this.classList.toggle('hover')">
+              <div id="toggle">
+              </div>
+            </div>
+     </div>
+
+<!--Settings and logout button-->
+
+     <div class="col-2 navdrop">
+     <button type="button" class="vp-cog " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="fa fa-cog vp-cog"></span>
+                          </button>            
+            <h6 class="vp-logout pull-right">Logout</h6>
+     </div>
+
+</div>

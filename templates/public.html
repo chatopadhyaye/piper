@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Public</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static "styles/main.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "styles/font-awesome.min.css" %}">
+	<script src="{% static "scripts/jquery.min.js" %}"></script>
+	<!--<link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css" />  -->
+</head>
+<body>
+
+{% include "inc/nav.html" %}
+{% include "inc/sidebar.html" %}
+
+
+         <!--Main content-->
+
+<div class="m_side">
+<div class="mid_sec">
+	
+	<!--Cover pic-->
+	<div class="cover_pic">
+		<img src="{% static "images/chris_cover.jpg" %}">
+		
+	</div>
+
+   <!--Profile header-->
+   <div class="col-12 profile_header">
+   	<div class="col-3 pr_header_dp">
+   		<img src="{% static "images/chris_dp.jpg" %}" class="vp-profile-pic">
+   	</div>
+
+   	<div class="col-4 pr_header_name">
+   		<h3>Chris Cox</h3>
+   		<div>
+   			<button class="btn">Acquaintance &nbsp;
+   				<span class="caret"></span>
+   			</button>
+   		</div>
+   	</div>
+
+   	<div class="col-2 pr_header_conect" title="Common Connections">
+        <span>365</span><span>&nbsp;cc</span>
+   	</div>
+
+   	<div class="col-3 pr_header_msg">
+   		
+   		<div class="pull_right dropdown_click">
+   			<span class="fa fa-ellipsis-v"></span>
+   		</div>
+
+        <button class="btn pull_right">Message</button>
+ 
+   	</div>
+
+   	
+   </div>
+
+	
+</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#rotator").click(function(){
+    $(".front").toggleClass('flippedf');
+    $(".back").toggleClass('flippedb');
+  });
+
+
+});
+
+</script>
+
+
+</body>
+</html>
