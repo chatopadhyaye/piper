@@ -32,5 +32,8 @@ def display_meta(request):
     return HttpResponse('<table>%s</table>' % '\n'.join(html))
 
 def public(request):
-    return render(request, 'public.html', {"user_name": "Clark Kent"})
+    return render(request, 'public.html',)
+
+def about(request):
+    return render(request, 'about.html',)
 

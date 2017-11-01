@@ -1,0 +1,73 @@
+{% extends "base1.html" %}
+
+{% load static %}
+         <!--Main content-->
+
+
+
+{% block content %}
+
+<!--profile header-->
+
+<div class="m_side">
+<div class="mid_sec group">
+	
+	<!--Cover pic-->
+	<div class="cover_pic">
+		<img src="{% static "images/chris_cover.jpg" %}">	
+	</div>
+
+   <!--Profile header-->
+   <div class="col-12 profile_header">
+   	<div class="col-3 pr_header_dp">
+   		<img src="{% static "images/batman.jpg" %}" class="vp-profile-pic">
+   	</div>
+
+   	<div class="col-4 pr_header_name">
+   		<h3>Batman</h3>
+   		<div>
+   			<button class="btn">Acquaintance &nbsp;
+   				<span class="caret"></span>
+   			</button>
+   		</div>
+   	</div>
+
+   	<div class="col-1 pr_header_conect" title="Common Connections">
+        <span>365</span><span>&nbsp;cc</span>
+   	</div>
+
+   	<div class="col-3 pr_header_msg">
+   		
+   		<div class="pull_right dropdown_click">
+   			<span class="fa fa-ellipsis-v"></span>
+   		</div>
+
+        <button class="btn message_button pull_right">Message</button>
+ 
+   	</div>
+
+   	
+   </div>
+
+
+<div class="col-12 pro_nav">
+   <span class="fa fa-globe"></span>
+   <a href="#">About</a>|
+
+   <a href="#">Shared</a>|
+
+   <a href="#">Photos</a>
+</div>
+
+{% block profile_content %}
+{% endblock %}
+
+	
+</div>
+</div>
+
+
+
+
+
+{% endblock %}
