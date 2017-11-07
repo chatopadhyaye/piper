@@ -37,3 +37,8 @@ def public(request):
 def about(request):
     return render(request, 'about.html',)
 
+def edit(request):
+    return render(request, 'edit.html',)
+
+def privacy(request):
+    return render(request, 'privacy.html',)

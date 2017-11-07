@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Public</title>
+	<title>{% block title %}VityPro{% endblock %}</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="{% static "styles/main.css" %}">
 	<link rel="stylesheet" type="text/css" href="{% static "styles/font-awesome.min.css" %}">
 	<script src="{% static "scripts/jquery.min.js" %}"></script>
+  <link rel="icon" type="image/png" href="{% static "images/fevicon.png" %}">
 	<!--<link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css" />  -->
 </head>
 <body>
@@ -368,8 +369,143 @@
     $(".back").toggleClass('flippedb');
   });
 
+    //setting up cover pic position.
+  $(".cover_pic").scrollTop(150);
 
 });
+
+
+
+// character count for editing bio
+maxCharacters = 160;
+
+$('#count').text(maxCharacters);
+
+$('.edit_bio').bind('input', function() {
+    var count = $('#count');
+    var save = $('.save');
+    var characters = $(this).val().length;
+    
+    if (characters > maxCharacters) {
+        count.addClass('over');
+        save.prop("disabled", true);
+
+    } else {
+        count.removeClass('over');
+        save.prop("disabled", false);
+    }
+    
+    count.text(maxCharacters - characters);
+});
+
+
+//hide the relationship partner search form
+  $('.rel_part').hide(); 
+
+//Relationship partner box
+  $(document).ready(function(){
+    $('.rel_status').change(function(){
+        var wth = $('#with');
+        var to = $('#to');
+        var from = $('#from');
+        if ($('.rel_status').val() == '0'){
+            $('.rel_part').hide(); 
+            wth.removeClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '11'){
+            $('.rel_part').hide(); 
+            wth.removeClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '2'){
+            $('.rel_part').show(); 
+            wth.addClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '3'){
+            $('.rel_part').show(); 
+            wth.removeClass('dis_inl');
+            to.addClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '4'){
+            $('.rel_part').show(); 
+            wth.removeClass('dis_inl');
+            to.addClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '5'){
+            $('.rel_part').show(); 
+            wth.addClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '6'){
+            $('.rel_part').show(); 
+            wth.addClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '7'){
+            $('.rel_part').show(); 
+            wth.addClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '8'){
+            $('.rel_part').show(); 
+            wth.addClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else if ($('.rel_status').val() == '10'){
+            $('.rel_part').hide(); 
+            wth.removeClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.removeClass('dis_inl');
+        } else {
+            $('.rel_part').show(); 
+            wth.removeClass('dis_inl');
+            to.removeClass('dis_inl');
+            from.addClass('dis_inl');
+        } 
+    });
+
+
+  });
+
+
+
+  //slide down and transform chevron 180deg for ***HAVE WORKED AT***
+
+  $(document).ready(function(){
+    $("#chev_b_1").click(function(){
+        $("#s_down1").slideToggle("fast");
+        $("#chev1").toggleClass('chev_180');
+    });
+});
+
+
+$(document).ready(function(){
+    $("#chev_b_2").click(function(){
+        $("#s_down2").slideToggle("fast");
+        $("#chev2").toggleClass('chev_180');
+    });
+});
+
+
+$(document).ready(function(){
+    $("#chev_b_3").click(function(){
+        $("#s_down3").slideToggle("fast");
+        $("#chev3").toggleClass('chev_180');
+    });
+});
+
+
+$(document).ready(function(){
+    $("#chev_b_4").click(function(){
+        $("#s_down4").slideToggle("fast");
+        $("#chev4").toggleClass('chev_180');
+    });
+});
+
+
+
 
 </script>
 

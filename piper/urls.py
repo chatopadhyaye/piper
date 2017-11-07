@@ -28,6 +28,10 @@ urlpatterns = [
     url(r'^contact/$', contact), 
     url(r'^public/$', views.public, name = "public"),
     url(r'^about/$', views.about, name = "about"),
-
+    url(r'^edit/$', views.edit, name = "edit"),
+    url(r'^privacy/$', views.privacy, name = "privacy"),
 
 ]
+
+
+
