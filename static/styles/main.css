@@ -699,17 +699,17 @@ input:checked + .slider:before {
   background-color: white;
   margin-bottom: 115px;
   line-height: 1.42857143;
-  height: 1500px;
+  height: 1850px;
 }
 
 .pro_nav > span {
-    font-size: 15px;
-    border: 1px solid #ccc;
-    padding: 1px 3px 2px 3px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #4a4a4a;
-    float: left;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  padding: 1px 3px 2px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #4a4a4a;
+  float: left;
 }
 
 .pro_nav > span:hover {
@@ -1032,6 +1032,19 @@ input:checked + .slider:before {
   float: right;
 }
 
+.to_1:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.to_1:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
 .edit_edu_type {
   margin-top: 10px;
   width: 107px;
@@ -1041,7 +1054,7 @@ input:checked + .slider:before {
   margin-right: 9px;
 }
 
-.to {
+.to_txt {
   margin: 2px 9px 0px 0px;
 }
 
@@ -1108,6 +1121,12 @@ input:checked + .slider:before {
   display: none;
 }
 
+.border_t_work {
+  border-top: 1px solid #D2D1D1;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
 .chev_d {
   transition-duration: 0.7s;
   font-size: 12px !important;
@@ -1122,6 +1141,10 @@ input:checked + .slider:before {
 
 .d_none {
   display: none;
+}
+
+.d_none_i {
+  display: none !important;
 }
 
 .pt2 {
@@ -1143,4 +1166,41 @@ input:checked + .slider:before {
 
 .p6_0 {
   padding: 6px 0px;
+}
+
+.d_inline {
+  display: inline-block;
+}
+
+.trash {
+  visibility: hidden;
+  font-size: 12px !important;
+  color: black;
+}
+
+.wrk:hover .trash{
+  visibility: visible;
+}
+
+.trash:hover {
+  padding: 3px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.wrk .pro_info {
+  width: 170px;
+  max-height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lived_spacer {
+  height: 19px;
+}
+
+.mw170 {
+  max-width: 170px;
 }

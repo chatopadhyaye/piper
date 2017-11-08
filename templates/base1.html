@@ -505,6 +505,48 @@ $(document).ready(function(){
 });
 
 
+// Disable education "to" year when "from" year is not selected
+
+  $('.to_1').prop("disabled", true);
+$(document).ready(function(){
+  $('.from_1').change(function(){
+    if ($('.from_1').val() == '0'){
+      $('.to_1').prop("disabled", true);
+    } else {
+      $('.to_1').prop("disabled", false);
+    }
+  });
+});
+
+
+// Disable work "to" year when "from" year is not selecd
+$('.to_2').prop("disabled", true);
+$(document).ready(function(){
+  $('.from_2').change(function(){
+    if ($('.from_2').val() == '0'){
+      $('.to_2').prop("disabled", true);
+    } else {
+      $('.to_2').prop("disabled", false);
+    }
+  });
+});
+
+
+// if workplace checkbox is checked hide "to" year and show "present"
+$('#present_work').removeClass('d_inline');
+$(document).ready(function(){
+  $('.work_check').change(function(){
+  if ($('.work_check').is(':checked')) {
+    $('.to_2').addClass('d_none');
+    $('#present_work').addClass('d_inline');
+  } else {
+    $('.to_2').removeClass('d_none');
+    $('#present_work').removeClass('d_inline');
+  }
+
+  });
+
+});
 
 
 </script>
