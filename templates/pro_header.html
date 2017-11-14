@@ -1,7 +1,7 @@
 {% extends "base1.html" %}
 
 {% load static %}
-         <!--Main content-->
+		 <!--Main content-->
 
 
 
@@ -14,46 +14,47 @@
 	
 	<!--Cover pic-->
 	<div class="cover_pic">
-      <div class="cover_container">
-		<img src="{% static "images/chris_cover.jpg" %}">	
-      </div>
+		<div class="cover_container">
+			<img src="{% static "images/chris_cover.jpg" %}">	
+		</div>
 	</div>
 
    <!--Profile header-->
    <div class="col-12 profile_header">
-   	<div class="col-3 pr_header_dp">
-   		<img src="{% static "images/batman.jpg" %}" class="vp-profile-pic">
-   	</div>
+	<div class="col-3 pr_header_dp">
+		<img src="{% static "images/batman.jpg" %}" class="vp-profile-pic">
+	</div>
 
-   	<div class="col-4 pr_header_name">
-   		<h3>Bruce Wayne</h3>
-   		<div>
-   			<button class="btn">Acquaintance &nbsp;
-   				<span class="caret"></span>
-   			</button>
-   		</div>
-   	</div>
+	<div class="col-4 pr_header_name">
+		<h3>Bruce Wayne</h3>
+		<div>
+			<button class="btn">Acquaintance &nbsp;
+				<span class="caret"></span>
+			</button>
+		</div>
+	</div>
 
-   	<div class="col-1 pr_header_conect" title="Common Connections">
-        <span>365</span><span>&nbsp;cc</span>
-   	</div>
+	<div class="col-1 pr_header_conect tooltip">
+		<span>365</span><span>&nbsp;cc</span>
+		<span class="tooltiptext">Common Connection</span>
+	</div>
 
-   	<div class="col-3 pr_header_msg">
-   		
-   		<div class="pull_right dropdown_click">
-   			<span class="fa fa-ellipsis-v"></span>
-   		</div>
+	<div class="col-3 pr_header_msg">
+		
+		<div class="pull_right dropdown_click">
+			<span class="fa fa-ellipsis-v"></span>
+		</div>
 
-        <button class="btn blue_button pull_right">Message</button>
+		<button class="btn blue_button pull_right">Message</button>
  
-   	</div>
+	</div>
 
-   	
+	
    </div>
 
 
 <div class="col-12 pro_nav">
-   <span class="fa fa-globe"></span>
+   <span class="fa fa-globe" title="Public Profile"></span>
    <a href="#">About</a>|
 
    <a href="#">Shared</a>|

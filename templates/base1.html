@@ -8,56 +8,56 @@
 	<link rel="stylesheet" type="text/css" href="{% static "styles/main.css" %}">
 	<link rel="stylesheet" type="text/css" href="{% static "styles/font-awesome.min.css" %}">
 	<script src="{% static "scripts/jquery.min.js" %}"></script>
-  <link rel="icon" type="image/png" href="{% static "images/fevicon.png" %}">
-	<!--<link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css" />  -->
+	<link rel="icon" type="image/png" href="{% static "images/fevicon.png" %}">
+	
 </head>
 <body>
 
 
 
-                  <!--Navigation bar-->
+									<!--Navigation bar-->
 
 
 
 
 <!--Home Button-->
 <div class="vp-nav">
-   <div class="col-1 home_icon">
-      <img src="{% static "images/homeicon.png" %}">
-   </div>
+	 <div class="col-1 home_icon">
+			<img src="{% static "images/homeicon.png" %}">
+	 </div>
 
 <!--Search bar-->
 
-   <div class="col-4 search-container" >
-         <form class="vp-search"  role="search">
-          <input type="text" class="vp-input-search" placeholder="search" >
-         <span class="fa fa-search vp-search-icon pull-right" ></span>
-      </form>  
-      </div>
+	 <div class="col-4 search-container" >
+				 <form class="vp-search"  role="search">
+					<input type="text" class="vp-input-search" placeholder="search" >
+				 <span class="fa fa-search vp-search-icon pull-right" ></span>
+			</form>  
+			</div>
 
 <!--VityPro Logo-->
 
-      <div class="col-2 branding logo" >          
-           <h1><img src="{% static "images/logoa.png" %}" style="height:30px" /></h1>
-      </div>
-     
+			<div class="col-2 branding logo" >          
+					 <h1><img src="{% static "images/logoa.png" %}" style="height:30px" /></h1>
+			</div>
+		 
 <!--Blue/green page toggle-->     
 
-      <div class="col-2 spacer vp_margin_top ">       
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-         </label>
-      </div>
+			<div class="col-2 spacer vp_margin_top ">       
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				 </label>
+			</div>
 
 <!--Settings and logout button-->
 
-     <div class="col-3 navdrop">
-     <button type="button" class="vp-cog " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <span class="fa fa-cog vp-cog"></span>
-                          </button>            
-            <h6 class="vp-logout pull-right">Logout</h6>
-     </div>
+		 <div class="col-3 navdrop">
+		 <button type="button" class="vp-cog " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													 <span class="fa fa-cog vp-cog"></span>
+													</button>            
+						<h6 class="vp-logout pull-right">Logout</h6>
+		 </div>
 
 </div>
 
@@ -65,7 +65,7 @@
 
 
 
-                <!--Sidebar-->
+								<!--Sidebar-->
 
 
 
@@ -73,62 +73,62 @@
 
 <div class="sidebar_container">
 
-        <!--Sidebar rotator-->
-  <div id="rotator">
-    <img src="{% static "images/rotate.png" %}">
-  </div>
-   
+				<!--Sidebar rotator-->
+	<div id="rotator">
+		<img src="{% static "images/rotate.png" %}">
+	</div>
+	 
 <div class="vp_sidebar front">
 
 <div class="notice_panel">
 
-       <!--User pic and name-->
+			 <!--User pic and name-->
 
-    <div class="mtop">
+		<div class="mtop">
 
-      <div class="col-12 own_profile">
-        <div class="col-3 user_pic">
-          <img src="{% static "images/ck.jpg" %}" class="vp-user-dp">
-        </div>
-        <div class="col-7 user_name">
-          Clark Kent
-        </div>
-      </div>
-      
-    </div>    
-   
-       <!--Notification panel-->
+			<div class="col-12 own_profile">
+				<div class="col-3 user_pic">
+					<img src="{% static "images/ck.jpg" %}" class="vp-user-dp">
+				</div>
+				<div class="col-7 user_name">
+					Clark Kent
+				</div>
+			</div>
+			
+		</div>    
+	 
+			 <!--Notification panel-->
 
 
-             <!--Message-->
-    <div class="col-12 padding_side">
-      <button type="button" class="rgb_btn pull_right notif_r"><span></span></button>
-    </div>   
-        <!--Connection-->  
-    <div class="col-12 padding_side">
-      <button type="button" class="rgb_btn pull_right notif_g"><span></span></button>
-    </div>
-        <!--Notification-->
-    <div class="col-12 padding_side">
-      <button type="button" class="rgb_btn pull_right notif_b"><span></span></button>
-    </div>
+						 <!--Message-->
+		<div class="col-12 padding_side">
+			<button type="button" class="rgb_btn pull_right notif_r"><span></span></button>
+		</div>   
+				<!--Connection-->  
+		<div class="col-12 padding_side">
+			<button type="button" class="rgb_btn pull_right notif_g"><span></span></button>
+		</div>
+				<!--Notification-->
+		<div class="col-12 padding_side">
+			<button type="button" class="rgb_btn pull_right notif_b"><span></span></button>
+		</div>
 
 
 <!--Chat bar-->  
 
 
 <!--Chathead-->
-    <div class="col-12 chat_head_cont">
-        <div class="col-12 chat_head">
-         <h5 id="line_onf">ONLINE</h5>
-         <span class="fa fa-toggle-on chat_on"></span>
-      </div>
-     </div>    
+		<div class="col-12 chat_head_cont">
+				<div class="col-12 chat_head">
+				 <h5 id="line_onf">ONLINE</h5>
+				 <span class="fa fa-toggle-on chat_on"></span>
+			</div>
+		 </div>    
 
-  <div class="cont_search">
-   <span class="fa fa-search"></span>
-   <input type="text" name="cont_search" placeholder="search contacts">
-  </div>
+	<div class="cont_search">
+	 <span class="fa fa-search"></span>
+	 <input type="text" name="cont_search" placeholder="search contacts">
+	</div>
 
 
 </div>       
@@ -137,212 +137,212 @@
 
 <ul id="no_m">
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/pratik.jpg" %}" class="chat_dp">
-               <div class="chat_name">Pratik Sharma</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/pratik.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Pratik Sharma</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/chandan.jpg" %}" class="chat_dp">
-               <div class="chat_name">Chandan Jain</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/chandan.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Chandan Jain</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/nawed.jpg" %}" class="chat_dp">
-               <div class="chat_name">Nawed Nayaz</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/nawed.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Nawed Nayaz</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/idrisi.jpg" %}" class="chat_dp">
-               <div class="chat_name">Shadab Idrisi</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/idrisi.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Shadab Idrisi</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/nitesh.jpg" %}" class="chat_dp">
-               <div class="chat_name">Nitesh kumar</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/nitesh.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Nitesh kumar</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/mirza.jpg" %}" class="chat_dp">
-               <div class="chat_name">Mirza Haris Beg</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/mirza.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Mirza Haris Beg</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/rohit.jpg" %}" class="chat_dp">
-               <div class="chat_name">Rohit Yadav</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/rohit.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Rohit Yadav</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-         <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/ronald.jpg" %}" class="chat_dp">
-               <div class="chat_name">Ronald Lal</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+				 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/ronald.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Ronald Lal</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/shadab.jpg" %}" class="chat_dp">
-               <div class="chat_name">Shadab Ahmad</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/shadab.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Shadab Ahmad</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/shaheer.jpg" %}" class="chat_dp">
-               <div class="chat_name">Shaheer Ahmad</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/shaheer.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Shaheer Ahmad</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/surya.jpg" %}" class="chat_dp">
-               <div class="chat_name">Surya Mahapatro</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/surya.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Surya Mahapatro</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/sugandha.jpg" %}" class="chat_dp">
-               <div class="chat_name">Sugandha Pathaniya</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/sugandha.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Sugandha Pathaniya</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 
-       <!--chat list person 1-->
-       <li class=" col-12 vp_chat_row">
-         <a href="{% url "date" %}" id="black_font">
-         <div class="row_container">
-            <div class="chat_dp_cont">
-               <img src="{% static "images/ashraf.jpg" %}" class="chat_dp">
-               <div class="chat_name">Ashraf Warsi</div>
-               <div class="on_indic_class">
-               <span class="fa fa-circle online_indic"></span>
-               </div>
-            </div>
-         </div>
-         </a>
-       </li>
+			 <!--chat list person 1-->
+			 <li class=" col-12 vp_chat_row">
+				 <a href="{% url "date" %}" id="black_font">
+				 <div class="row_container">
+						<div class="chat_dp_cont">
+							 <img src="{% static "images/ashraf.jpg" %}" class="chat_dp">
+							 <div class="chat_name">Ashraf Warsi</div>
+							 <div class="on_indic_class">
+							 <span class="fa fa-circle online_indic"></span>
+							 </div>
+						</div>
+				 </div>
+				 </a>
+			 </li>
 
 </ul>
 
@@ -354,7 +354,7 @@
 </div>  <!--front-->
 
 <div class="back">
-  
+	
 </div>  <!--back-->
 
 </div> <!--sidebar_container-->
@@ -362,15 +362,19 @@
 
 {% block content %}{% endblock %}
 
-<script>
-  $(document).ready(function(){
-    $("#rotator").click(function(){
-    $(".front").toggleClass('flippedf');
-    $(".back").toggleClass('flippedb');
-  });
+<!--
 
-    //setting up cover pic position.
-  $(".cover_pic").scrollTop(150);
+<script>
+
+	
+	$(document).ready(function(){
+		$("#rotator").click(function(){
+		$(".front").toggleClass('flippedf');
+		$(".back").toggleClass('flippedb');
+	});
+
+		//setting up cover pic position.
+	$(".cover_pic").scrollTop(150);
 
 });
 
@@ -382,175 +386,202 @@ maxCharacters = 160;
 $('#count').text(maxCharacters);
 
 $('.edit_bio').bind('input', function() {
-    var count = $('#count');
-    var save = $('.save');
-    var characters = $(this).val().length;
-    
-    if (characters > maxCharacters) {
-        count.addClass('over');
-        save.prop("disabled", true);
+		var count = $('#count');
+		var save = $('.save');
+		var characters = $(this).val().length;
+		
+		if (characters > maxCharacters) {
+				count.addClass('over');
+				save.prop("disabled", true);
 
-    } else {
-        count.removeClass('over');
-        save.prop("disabled", false);
-    }
-    
-    count.text(maxCharacters - characters);
+		} else {
+				count.removeClass('over');
+				save.prop("disabled", false);
+		}
+		
+		count.text(maxCharacters - characters);
 });
 
 
 //hide the relationship partner search form
-  $('.rel_part').hide(); 
+	$('.rel_part').hide(); 
 
 //Relationship partner box
-  $(document).ready(function(){
-    $('.rel_status').change(function(){
-        var wth = $('#with');
-        var to = $('#to');
-        var from = $('#from');
-        if ($('.rel_status').val() == '0'){
-            $('.rel_part').hide(); 
-            wth.removeClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '11'){
-            $('.rel_part').hide(); 
-            wth.removeClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '2'){
-            $('.rel_part').show(); 
-            wth.addClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '3'){
-            $('.rel_part').show(); 
-            wth.removeClass('dis_inl');
-            to.addClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '4'){
-            $('.rel_part').show(); 
-            wth.removeClass('dis_inl');
-            to.addClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '5'){
-            $('.rel_part').show(); 
-            wth.addClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '6'){
-            $('.rel_part').show(); 
-            wth.addClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '7'){
-            $('.rel_part').show(); 
-            wth.addClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '8'){
-            $('.rel_part').show(); 
-            wth.addClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else if ($('.rel_status').val() == '10'){
-            $('.rel_part').hide(); 
-            wth.removeClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.removeClass('dis_inl');
-        } else {
-            $('.rel_part').show(); 
-            wth.removeClass('dis_inl');
-            to.removeClass('dis_inl');
-            from.addClass('dis_inl');
-        } 
-    });
+	$(document).ready(function(){
+		$('.rel_status').change(function(){
+				var wth = $('#with');
+				var to = $('#to');
+				var from = $('#from');
+				if ($('.rel_status').val() == '0'){
+						$('.rel_part').hide(); 
+						wth.removeClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '11'){
+						$('.rel_part').hide(); 
+						wth.removeClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '2'){
+						$('.rel_part').show(); 
+						wth.addClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '3'){
+						$('.rel_part').show(); 
+						wth.removeClass('dis_inl');
+						to.addClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '4'){
+						$('.rel_part').show(); 
+						wth.removeClass('dis_inl');
+						to.addClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '5'){
+						$('.rel_part').show(); 
+						wth.addClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '6'){
+						$('.rel_part').show(); 
+						wth.addClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '7'){
+						$('.rel_part').show(); 
+						wth.addClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '8'){
+						$('.rel_part').show(); 
+						wth.addClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else if ($('.rel_status').val() == '10'){
+						$('.rel_part').hide(); 
+						wth.removeClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.removeClass('dis_inl');
+				} else {
+						$('.rel_part').show(); 
+						wth.removeClass('dis_inl');
+						to.removeClass('dis_inl');
+						from.addClass('dis_inl');
+				} 
+		});
 
 
-  });
+	});
 
 
 
-  //slide down and transform chevron 180deg for ***HAVE WORKED AT***
+	//slide down and transform chevron 180deg for ***HAVE WORKED AT***
 
-  $(document).ready(function(){
-    $("#chev_b_1").click(function(){
-        $("#s_down1").slideToggle("fast");
-        $("#chev1").toggleClass('chev_180');
-    });
+	$(document).ready(function(){
+		$("#chev_b_1").click(function(){
+				$("#s_down1").slideToggle("fast");
+				$("#chev1").toggleClass('chev_180');
+		});
 });
 
 
 $(document).ready(function(){
-    $("#chev_b_2").click(function(){
-        $("#s_down2").slideToggle("fast");
-        $("#chev2").toggleClass('chev_180');
-    });
+		$("#chev_b_2").click(function(){
+				$("#s_down2").slideToggle("fast");
+				$("#chev2").toggleClass('chev_180');
+		});
 });
 
 
 $(document).ready(function(){
-    $("#chev_b_3").click(function(){
-        $("#s_down3").slideToggle("fast");
-        $("#chev3").toggleClass('chev_180');
-    });
+		$("#chev_b_3").click(function(){
+				$("#s_down3").slideToggle("fast");
+				$("#chev3").toggleClass('chev_180');
+		});
 });
 
 
 $(document).ready(function(){
-    $("#chev_b_4").click(function(){
-        $("#s_down4").slideToggle("fast");
-        $("#chev4").toggleClass('chev_180');
-    });
+		$("#chev_b_4").click(function(){
+				$("#s_down4").slideToggle("fast");
+				$("#chev4").toggleClass('chev_180');
+		});
 });
 
 
 // Disable education "to" year when "from" year is not selected
 
-  $('.to_1').prop("disabled", true);
+	$('.to_1').prop("disabled", true);
 $(document).ready(function(){
-  $('.from_1').change(function(){
-    if ($('.from_1').val() == '0'){
-      $('.to_1').prop("disabled", true);
-    } else {
-      $('.to_1').prop("disabled", false);
-    }
-  });
+	$('.from_1').change(function(){
+		if ($('.from_1').val() == '0'){
+			$('.to_1').prop("disabled", true);
+		} else {
+			$('.to_1').prop("disabled", false);
+		}
+	});
 });
 
 
 // Disable work "to" year when "from" year is not selecd
 $('.to_2').prop("disabled", true);
 $(document).ready(function(){
-  $('.from_2').change(function(){
-    if ($('.from_2').val() == '0'){
-      $('.to_2').prop("disabled", true);
-    } else {
-      $('.to_2').prop("disabled", false);
-    }
-  });
+	$('.from_2').change(function(){
+		if ($('.from_2').val() == '0'){
+			$('.to_2').prop("disabled", true);
+		} else {
+			$('.to_2').prop("disabled", false);
+		}
+	});
 });
 
 
 // if workplace checkbox is checked hide "to" year and show "present"
 $('#present_work').removeClass('d_inline');
 $(document).ready(function(){
-  $('.work_check').change(function(){
-  if ($('.work_check').is(':checked')) {
-    $('.to_2').addClass('d_none');
-    $('#present_work').addClass('d_inline');
-  } else {
-    $('.to_2').removeClass('d_none');
-    $('#present_work').removeClass('d_inline');
-  }
+	$('.work_check').change(function(){
+	if ($('.work_check').is(':checked')) {
+		$('.to_2').addClass('d_none');
+		$('#present_work').addClass('d_inline');
+	} else {
+		$('.to_2').removeClass('d_none');
+		$('#present_work').removeClass('d_inline');
+	}
 
-  });
-
+	});
 });
 
 
-</script>
 
+
+//PRIVACY DROPDOWN 
+
+
+$(document).ready(function() {
+	$('.pvt_btn').click(function(){
+
+		window.container = $(this).parents('.indicator');
+
+		$(this).siblings('div').toggle();
+	});
+});
+
+
+
+
+$(document).mouseup(function(e) {
+
+		// if the target of the click isn't the descendant of the container
+		if (container.has(e.target).length === 0 ) 
+		{
+				container.children(".pri_down").hide();
+		}
+});
+
+
+
+</script>  -->
+<script type="text/javascript" src="{% static "scripts/main.js" %}"></script>
 
 </body>
 </html>
