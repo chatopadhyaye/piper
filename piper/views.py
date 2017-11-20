@@ -8,10 +8,10 @@ def hello(request):
 	return HttpResponse ("Hello World")
 
 def current_datetime(request): 
-    now = datetime.datetime.now() 
-    t = get_template('current_datetime.html') 
-    html = t.render({'current_date': now}) 
-    return HttpResponse(html) 
+	now = datetime.datetime.now() 
+	t = get_template('current_datetime.html') 
+	html = t.render({'current_date': now}) 
+	return HttpResponse(html) 
 
 def hours_ahead(request, offset):
 	try:
@@ -24,21 +24,34 @@ def hours_ahead(request, offset):
 	return HttpResponse(html)
 
 def display_meta(request):
-    values = list(request.META.items())
-    values.sort()
-    html = []
-    for k, v in values:
-      html.append('<tr><td>%s</td><td>%s</td></tr>' % (k, v))
-    return HttpResponse('<table>%s</table>' % '\n'.join(html))
+	values = list(request.META.items())
+	values.sort()
+	html = []
+	for k, v in values:
+	  html.append('<tr><td>%s</td><td>%s</td></tr>' % (k, v))
+	return HttpResponse('<table>%s</table>' % '\n'.join(html))
 
 def public(request):
-    return render(request, 'public.html',)
+	return render(request, 'public.html',)
 
 def about(request):
-    return render(request, 'about.html',)
+	return render(request, 'about.html',)
 
 def edit(request):
-    return render(request, 'edit.html',)
+	return render(request, 'edit.html',)
 
 def privacy(request):
-    return render(request, 'privacy.html',)
+	return render(request, 'privacy.html',)
+
+def shared(request):
+	return render(request, 'shared.html',)
+
+def photos(request):
+	return render(request, 'photos.html',)
+	
+def videos(request):
+	return render(request, 'videos.html',)
+
+def album(request):
+	return render(request, 'album.html',)
+	

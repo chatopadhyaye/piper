@@ -30,6 +30,10 @@ urlpatterns = [
     url(r'^about/$', views.about, name = "about"),
     url(r'^edit/$', views.edit, name = "edit"),
     url(r'^privacy/$', views.privacy, name = "privacy"),
+    url(r'^shared/$', views.shared, name = "shared"),
+    url(r'^photos/$', views.photos, name = "photos"),
+    url(r'^videos/$', views.videos, name = "videos"),
+    url(r'^album/$', views.album, name = "album"),
 
 ]
 

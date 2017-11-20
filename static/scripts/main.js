@@ -46,52 +46,54 @@ $('.edit_bio').bind('input', function() {
 				var wth = $('#with');
 				var to = $('#to');
 				var from = $('#from');
-				if ($('.rel_status').val() == '0'){
+				var status = $('.rel_status')
+
+				if (status.val() == '0'){
 						$('.rel_part').hide(); 
 						wth.removeClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '11'){
+				} else if (status.val() == '11'){
 						$('.rel_part').hide(); 
 						wth.removeClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '2'){
+				} else if (status.val() == '2'){
 						$('.rel_part').show(); 
 						wth.addClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '3'){
+				} else if (status.val() == '3'){
 						$('.rel_part').show(); 
 						wth.removeClass('dis_inl');
 						to.addClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '4'){
+				} else if (status.val() == '4'){
 						$('.rel_part').show(); 
 						wth.removeClass('dis_inl');
 						to.addClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '5'){
+				} else if (status.val() == '5'){
 						$('.rel_part').show(); 
 						wth.addClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '6'){
+				} else if (status.val() == '6'){
 						$('.rel_part').show(); 
 						wth.addClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '7'){
+				} else if (status.val() == '7'){
 						$('.rel_part').show(); 
 						wth.addClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '8'){
+				} else if (status.val() == '8'){
 						$('.rel_part').show(); 
 						wth.addClass('dis_inl');
 						to.removeClass('dis_inl');
 						from.removeClass('dis_inl');
-				} else if ($('.rel_status').val() == '10'){
+				} else if (status.val() == '10'){
 						$('.rel_part').hide(); 
 						wth.removeClass('dis_inl');
 						to.removeClass('dis_inl');
@@ -111,36 +113,48 @@ $('.edit_bio').bind('input', function() {
 
 	//slide down and transform chevron 180deg for ***HAVE WORKED AT***
 
-	$(document).ready(function(){
+
 		$("#chev_b_1").click(function(){
 				$("#s_down1").slideToggle("fast");
 				$("#chev1").toggleClass('chev_180');
 		});
-});
 
 
-$(document).ready(function(){
+
+
 		$("#chev_b_2").click(function(){
 				$("#s_down2").slideToggle("fast");
 				$("#chev2").toggleClass('chev_180');
 		});
-});
 
 
-$(document).ready(function(){
+
+
 		$("#chev_b_3").click(function(){
 				$("#s_down3").slideToggle("fast");
 				$("#chev3").toggleClass('chev_180');
 		});
-});
 
 
-$(document).ready(function(){
+
 		$("#chev_b_4").click(function(){
 				$("#s_down4").slideToggle("fast");
 				$("#chev4").toggleClass('chev_180');
 		});
-});
+
+
+
+		$("#chev_b_5").click(function(){
+				$("#s_down5").slideToggle("slow");
+				$("#chev5").toggleClass('chev_180');
+		});
+
+
+
+		$("#chev_b_6").click(function(){
+				$("#s_down6").slideToggle("fast");
+				$("#chev6").toggleClass('chev_180');
+		});
 
 
 // Disable education "to" year when "from" year is not selected
@@ -288,7 +302,73 @@ $(document).click(function(e) {
 		// if the target of the click isn't the descendant of the container
 		if (container.has(e.target).length === 0 ) 
 		{
-				container.children(".pri_down").hide();
+			container.children(".pri_down").hide();
 		}
 });
 
+
+
+//scrollbar for mozilla
+
+//	var ps = new PerfectScrollbar('.chat_bar');
+
+
+
+// chev for photos
+
+$("#chev_p").click(function(){
+	$(".photos_view_container").removeClass('h1049');
+});
+
+
+// Add classes to obkects based on URL
+var photos = $('.id_photo');
+
+switch (window.location.pathname) {
+	case '/about/':
+		$('.id_abt').addClass('active_border');
+		break;
+	case '/shared/':
+		$('.id_shared').addClass('active_border');
+		$('.personal').addClass('active_background');
+		break;
+	case '/photos/':
+		photos.addClass('active_border');
+		$('.id_ph').addClass('active_border');
+		break;
+	case '/videos/':
+		photos.addClass('active_border');
+		$('.id_vid').addClass('active_border');
+		break;
+	case '/album/':
+		photos.addClass('active_border');
+		$('.id_al').addClass('active_border');
+		$('.photos_view_container').css('border-top', '1px solid #c5c5c5')
+		break;
+	case '/public_posts/':
+		$('.id_shared').addClass('active_border');
+		$('shared_public').addClass('active_border');
+		break;
+}
+
+
+
+// Album list toggle 
+
+if ($('.album_cover').length > 5) {
+	$('.view_all').addClass('inl_block_i');
+}
+
+
+$('.view_all').on('click', function(){
+	$('.alb_container').toggleClass('album_closed');
+	$(this).toggleClass('view_all_close');
+	if($(this).hasClass('view_all_close')){
+		$(this).children('span').html('View All');
+	}
+	else{
+		$(this).children('span').html('Contract');
+	}
+
+
+});

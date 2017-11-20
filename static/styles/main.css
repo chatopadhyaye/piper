@@ -81,10 +81,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 	right:-25px;
 	top:53px;
 	cursor: pointer;
+	opacity: 0.7;
 }
 
 #rotator:hover {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 #rotator > img {
@@ -207,11 +208,12 @@ and (max-width : 1103px) {
 	font-size: 14px;
 	padding: 7px 7px 7px 31px;
 	cursor: pointer;
+	opacity: 0.8;
 
 }
 
 .vp-cog:hover {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .vp-cog:focus {
@@ -230,10 +232,11 @@ and (max-width : 1103px) {
 	padding: 13px 6px;
 	font-size: 12px;
 	cursor: pointer;
+	opacity: 0.8;
 }
 
 .vp-logout:hover {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .mtop {
@@ -360,7 +363,7 @@ and (max-width : 1103px) {
 	background-color: #F1F1F1;
 }
 
-a#black_font {
+a.black_font {
 	color: black;
 }
 
@@ -473,6 +476,14 @@ a#black_font {
 @-moz-document url-prefix() {
 	.cover_pic {
 		overflow-y: hidden;
+	}
+
+	.chat_bar {
+		overflow-y: hidden;
+	}
+
+	.chat_bar:hover {
+		overflow-y: scroll;
 	}
 }
 
@@ -792,7 +803,6 @@ input:checked + .slider:before {
 
 .pro_info {
 	color: #365899;
-	font-weight: bold;
 	font-size: 16px;
 	font-family: sans-serif;
 	display: inline-block;
@@ -1515,6 +1525,16 @@ input:checked + .slider:before {
 }
 
 
+.pvt_btn .sprite_1 {
+	margin-left: 6px;
+}
+
+.pvt_btn .fork {
+	margin-left: 4px;
+}
+
+
+
 .privacy {
 	width: 7px;
 	height: 7px;
@@ -1579,6 +1599,10 @@ input:checked + .slider:before {
 	display: inline-block;
 }
 
+.inl_block_i {
+	display: inline-block !important;
+}
+
 .black .inl_block {
 	margin: 0px 3px -4px 8px;
 }
@@ -1627,4 +1651,217 @@ input:checked + .slider:before {
 
 .hide {
 	display: none;
+}
+
+.bio_contianer {
+	border-bottom: 1px solid gray;
+	height: 30px;
+}
+
+.pb0 {
+	padding-bottom: 0px;
+}
+
+.pub_pic {
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	margin: 1px;
+	border: 1px solid #bbbaba;
+}
+
+.btn_redirect {
+	float: right;
+	padding: 3px;
+}
+
+.btn_redirect:hover {
+	color: white;
+	background-color: black;
+	padding: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn_redirect2 {
+	float: right;
+	padding: 3px;
+	margin: 6px 17px 0px 0px;
+}
+
+.btn_redirect2:hover {
+	color: white;
+	background-color: black;
+	padding: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.shared_head {
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 20px auto; 
+	background-color: #fbfbfb;
+	line-height: 1.42857143;
+	height: 58px;
+	width: 501px;
+	text-align: center;
+}
+
+.personal, .shared_public {
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px 10px 20px;
+}
+
+.personal:hover,.shared_public:hover {
+	background-color: gainsboro;
+}
+
+.personal {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.shared_public {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.photo_nav {
+	border-bottom: 1px solid #ddd;
+	height: 30px;
+}
+
+.photo_nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.photo_nav a {
+	display: inline-block;
+	padding: 0px 10px 10px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+.photo_nav a:hover {
+	border-bottom: 3px solid red;
+}
+
+.photos_view {
+	border: 1px solid #c5c5c5;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+.photos_view_container {
+	clear: both;
+	margin-top: 48px;
+	overflow: hidden;
+	padding-top: 26px;
+  margin-top: 20px;
+
+}
+
+.h1049 {
+	height: 1049px;
+}
+
+.h2048 {
+	height: 2048px;
+}
+
+.h3075 {
+	height: 3075px;
+}
+
+.active_border {
+	border-bottom: 3px solid red;
+}
+
+.active_background {
+	background-color: gainsboro;
+}
+
+.activity {
+	display: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  background: #000000;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  transition: 1000ms ease background-color;
+  float: left;
+}
+
+.photos_view:hover .activity {
+	display: block;
+  transition: 1000ms ease background-color;
+  background: rgba(0,0,0,.3);
+}
+
+.alb_container {
+	margin-top: 48px;
+	position: relative;
+
+}
+
+.album_cover {
+	border: 1px solid #c5c5c5;
+	display: inline-block;
+	height: 202px;
+	width: 197px;
+	position: relative;
+}
+
+.album_cover span {
+	bottom: 0px;
+	position: absolute;
+	border-top: 1px solid #c5c5c5;
+	width: 195px;
+	height: 28px;
+	font-weight: bold;
+	padding: 3px 3px 3px 6px;
+	background-color: white;
+	color: black;
+}
+
+.view_all_album {
+	border: none !important;
+  color: #bdbdbd !important;
+  font-size: 23px;
+  bottom: 87px !important;
+  left: 40px;
+  width: 99px !important;
+  background-color: transparent !important;
+}
+
+.view_all {
+	background-color: #fbfafa;
+  cursor: pointer;
+  border: 1px dashed #bfbaba !important;
+  display: none;
+}
+
+.view_all:hover {
+	background-color: #efeeee;
+}
+
+.album_closed {
+	height: 207px;
+	overflow: hidden;
+}
+
+.view_all_close {
+	position: absolute;
+	top: 0px;
+	right: 21px;
 }

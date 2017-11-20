@@ -55,11 +55,11 @@
 
 <div class="col-12 pro_nav">
    <span class="fa fa-globe" title="Public Profile"></span>
-   <a href="#">About</a>|
+   <a href="{% url "about" %}" class="id_abt">About</a>|
 
-   <a href="#">Shared</a>|
+   <a href="{% url "shared" %}" class="id_shared">Shared</a>|
 
-   <a href="#">Photos</a>
+   <a href="{% url "photos" %}" class="id_photo">Photos</a>
 </div>
 
 {% block profile_content %}
